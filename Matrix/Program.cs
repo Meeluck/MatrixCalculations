@@ -96,6 +96,22 @@ namespace Matrix
         static void Main(string[] args)
 		{
             TestRank();
+            Console.WriteLine(new string('-',50));
+            int[,] testEidenValue = 
+            {
+                { -1,-6},
+                { 2,6}
+            };
+            MatrixCalculations.Display(testEidenValue, 2, 2);
+            MatrixCalculations.Eigenvalues(testEidenValue,2);
+            int[,] testEidenValue2 =
+            {
+                {4,1,-1 },
+                {1,4,-1 },
+                {-1,-1,4 }
+            };
+            MatrixCalculations.Display(testEidenValue2, 2, 2);
+            MatrixCalculations.Eigenvalues(testEidenValue2, 3);
             Console.ReadKey();
         }
 	}
